@@ -8,7 +8,7 @@ def get_fibonacci_number(position):
 def get_fibonacci_number_sequence(number):
     seq_num = []
     for i in range(1, number + 1):
-        seq_num.append(get_fibonacci_number(i))
+        seq_num.append(get_fibonacci_number_sequence(i))
     return seq_num
 if __name__ == "__main__":
     print(get_fibonacci_number(3))
